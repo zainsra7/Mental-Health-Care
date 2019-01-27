@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context="com.l134046zain.mentalhealthcare.Post_Detail">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top|start"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:textColor="#9B15B3"
+        android:textColorHint="#9B15B3"
+        android:backgroundTint="#9B15B3"
+        android:id="@+id/editText4"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:textColor="#4663B1"
+        android:textColorHint="#4663B1"
+        android:backgroundTint="#4663B1"
+        android:gravity="top|start"
+        android:maxLines="10"
+       android:clickable="false"
+        android:focusable="false"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#84CDE8"
+        android:text="By Zain, April 20,2016"
+       android:layout_marginTop="20dp"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#9B15B3"
+        android:text="90"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+       android:src="@drawable/like"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

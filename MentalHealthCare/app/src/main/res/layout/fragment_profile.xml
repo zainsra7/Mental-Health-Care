@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadpicbutn2"
+        android:src="@android:drawable/ic_menu_upload"
+        android:layout_below="@+id/profilepic2"
+        android:layout_alignEnd="@+id/SignUPButton2" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/profilepic2"
+        android:src="@drawable/defaultimage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/EmailSignUPEdit2"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_below="@+id/profilepic2"
+        android:layout_marginTop="47dp"
+        android:layout_alignStart="@+id/profilepic2"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:id="@+id/PasswordSignUPEdit2"
+       android:layout_below="@+id/EmailSignUPEdit2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/EmailSignUPEdit2"
+        android:layout_alignEnd="@+id/EmailSignUPEdit2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:id="@+id/FullNameSignUPEdit2"
+
+        android:layout_below="@+id/PasswordSignUPEdit2"
+        android:layout_alignStart="@+id/PasswordSignUPEdit2"
+        android:layout_alignEnd="@+id/PasswordSignUPEdit2" />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+    android:background="@drawable/buttonshape"
+        android:layout_width="190dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"
+android:textColor="#FFFF"
+        android:id="@+id/SignUPButton2"
+        android:layout_below="@+id/dob2"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:singleLine="true"
+        android:id="@+id/dob2"
+        android:layout_below="@+id/FullNameSignUPEdit2"
+        android:layout_alignStart="@+id/FullNameSignUPEdit2"
+        android:focusable="false"
+        android:layout_alignEnd="@+id/FullNameSignUPEdit2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Anonymous"
+
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/dob2"
+        android:layout_alignStart="@+id/dob2" />
+
+
+
+</RelativeLayout>

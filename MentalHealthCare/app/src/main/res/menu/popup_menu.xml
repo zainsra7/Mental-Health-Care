@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/one"
+        android:icon="@drawable/viewicon"
+        android:title="View"/>
+
+    <item
+        android:id="@+id/two"
+        android:icon="@drawable/like"
+        android:title="Like/Unlike"
+        />
+    <item
+        android:id="@+id/three"
+       android:icon="@drawable/fbshare"
+        android:title="Share"/>
+    <item
+        android:id="@+id/four"
+       android:icon="@drawable/report"
+        android:title="Report"/>
+</menu>

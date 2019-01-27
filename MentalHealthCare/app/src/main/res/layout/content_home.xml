@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.l134046zain.mentalhealthcare.Home"
+    tools:showIn="@layout/app_bar_home"
+    android:id="@+id/ParentHome"
+    android:background="@drawable/gradient_background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app is a final year project made by a group of 4 students of Fast-NU.The purpose of this project is to examine and cure the most common mental illnesses emerging in Pakistan,specially in youth i.e Depression,Anxiety and Bipolar Disorder"
+        android:id="@+id/textView3"
+        android:fontFamily="@string/abc_action_bar_up_description"
+        android:textSize="16dp"
+        android:longClickable="false"
+        android:textStyle="italic"
+        android:paddingTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="129dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/textView3"
+        android:src="@drawable/location1"
+        android:layout_centerHorizontal="true" />
+
+
+  </RelativeLayout>

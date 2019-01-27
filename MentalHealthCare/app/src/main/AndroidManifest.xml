@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.l134046zain.mentalhealthcare">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".Exercise"
+            android:label="@string/title_activity_exercise"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.l134046zain.mentalhealthcare.Home" />
+        </activity>
+        <activity
+            android:name=".Play_Song"
+            android:parentActivityName=".Exercise"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".Play_Video"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".Exercise" />
+        <activity
+            android:name=".Play_Animation"
+            android:parentActivityName=".Exercise" />
+        <activity
+            android:name=".Forum_main"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Categories_Show"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Forum_main" />
+        <activity
+            android:name=".Create_Post"
+            android:parentActivityName=".Categories_Show"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".Post_Show"
+            android:parentActivityName=".Categories_Show" />
+        <activity
+            android:name=".Write_Comment"
+            android:parentActivityName=".Post_Show"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".Post_Detail"
+            android:parentActivityName=".Post_Show"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".Comment_Detail"
+            android:parentActivityName=".Post_Show"
+            android:theme="@style/Dialogs" />
+        <activity
+            android:name=".TakeTest"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".ProgressActivity"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

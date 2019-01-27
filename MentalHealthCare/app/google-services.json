@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "885031030460",
+    "firebase_url": "https://menyal-fyp.firebaseio.com",
+    "project_id": "menyal-fyp",
+    "storage_bucket": "menyal-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885031030460:android:74bca57e5b29a2ce",
+        "android_client_info": {
+          "package_name": "com.l134046zain.mentalhealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885031030460-8pc5nj76rfj53jnrbbevt3sgf2akqbjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqSWSCdLmCBLHZCltq9KcpbNHrBA1Yivo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

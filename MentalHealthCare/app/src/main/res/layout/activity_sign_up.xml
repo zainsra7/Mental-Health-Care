@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.l134046zain.mentalhealthcare.SignUpActivity"
+    android:background="#FFFF"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadpicbutn"
+        android:src="@android:drawable/ic_menu_upload"
+        android:layout_below="@+id/profilepic"
+        android:layout_toEndOf="@id/profilepic"
+        />
+
+    <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/profilepic"-->
+        <!--android:src="@drawable/defaultimage"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:paddingTop="15dp"-->
+        <!--/>-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profilepic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+        android:src="@drawable/defaultimage"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#FF000000"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/EmailWrapper2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilepic"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentStart="true"
+        >
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+        android:backgroundTint="#305256"
+        android:textColorHint="#305256"
+        android:textColor="#305256"
+        android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:id="@+id/EmailSignUPEdit"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/PasswordWrapper2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/EmailWrapper2"
+
+        android:layout_alignStart="@+id/EmailWrapper2"
+        android:layout_alignEnd="@+id/EmailWrapper2"
+        >
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:backgroundTint="#305256"
+            android:textColorHint="#305256"
+
+            android:textColor="#305256"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:id="@+id/PasswordSignUPEdit"
+             />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/FullNameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PasswordWrapper2"
+        android:layout_alignStart="@+id/PasswordWrapper2"
+        android:layout_alignEnd="@+id/PasswordWrapper2"
+        android:layout_marginTop="5dp"
+        >
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Full Name"
+            android:backgroundTint="#305256"
+            android:textColorHint="#305256"
+            android:textColor="#305256"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:id="@+id/FullNameSignUPEdit"
+             />
+
+</android.support.design.widget.TextInputLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+android:textColor="#FFFF"
+        android:layout_width="170dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/SignUPButton"
+android:background="@drawable/buttonshape"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:maxLines="1"
+        android:id="@+id/dob"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#305256"
+        android:textColorHint="#305256"
+        android:textColor="#305256"
+        android:layout_below="@+id/FullNameWrapper"
+        android:layout_alignStart="@+id/FullNameWrapper"
+        android:focusable="false"
+        android:layout_alignEnd="@+id/FullNameWrapper" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Anonymous"
+        android:layout_marginTop="5dp"
+        android:textColor="#305256"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/dob"
+        android:layout_alignStart="@+id/dob" />
+
+
+
+
+</RelativeLayout>

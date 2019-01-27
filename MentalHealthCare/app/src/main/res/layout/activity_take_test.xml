@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.l134046zain.mentalhealthcare.TakeTest">
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/frame1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:text="Tell us your preference from these options."
+        android:id="@+id/textView7"
+        android:textColor="#7E07B6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/frame1"
+        >
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+      android:layout_marginStart="4dp"
+        android:textColor="#0622B0"
+        android:text="Question."
+        android:id="@+id/textView13"
+       />
+
+</android.support.v7.widget.CardView>
+    </FrameLayout>
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/frame2"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:text="Do you like apples?"
+            android:textColor="#0622B0"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RadioButton
+            android:textColor="#0622B0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="4dp"
+            android:text="Do you like oranges?"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:onClick="onRadioButtonClicked"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RadioButton
+            android:textColor="#0622B0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Do you like to suicide?"
+            android:id="@+id/radioButton3"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0622B0"
+            android:layout_marginTop="4dp"
+            android:text="Do you have friends?"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#0622B0"
+            android:text="Do you cry?"
+            android:id="@+id/radioButton5"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Next"
+        android:textColor="#FFFF"
+       android:background="@drawable/buttonshape"
+        android:id="@+id/button4"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

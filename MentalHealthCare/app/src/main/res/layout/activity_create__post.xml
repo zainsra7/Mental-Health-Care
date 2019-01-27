@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.l134046zain.mentalhealthcare.Create_Post"
+    android:background="#ffff"
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:maxLines="4"
+        android:paddingTop="30dp"
+        android:textColor="#9B15B3"
+        android:textColorHint="#9B15B3"
+        android:backgroundTint="#9B15B3"
+        android:hint="Post Title"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:maxLines="10"
+         android:layout_marginTop="100dp"
+        android:id="@+id/editText2"
+        android:textColor="#4663B1"
+        android:textColorHint="#4663B1"
+        android:backgroundTint="#4663B1"
+        android:hint="Description/Detail"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:text="Submit"
+      android:background="@drawable/buttonshape"
+        android:id="@+id/createPost_submitButn"
+        android:layout_below="@+id/editText2"
+        android:textColor="#FFFF"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:text="Cancel"
+        android:background="@drawable/buttonshape"
+android:textColor="#FFFF"
+        android:id="@+id/createpost_CancelButn"
+        android:layout_alignTop="@+id/createPost_submitButn"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+
+</RelativeLayout>

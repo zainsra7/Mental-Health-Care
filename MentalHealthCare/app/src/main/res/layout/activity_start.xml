@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.l134046zain.mentalhealthcare.StartActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo3"
+        />
+
+    <Button
+        android:text="Login"
+        android:layout_width="200dp"
+      android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF"
+        android:id="@+id/button6"
+        android:background="@drawable/buttonshape"
+
+        style="?android:attr/buttonStyleSmall"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Sign Up"
+        android:textColor="#FFFF"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        style="?android:attr/buttonStyleSmall"
+      android:layout_marginTop="8dp"
+        android:layout_below="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button7"
+         />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fame1"
+        >
+        <include layout="@layout/or">
+        </include>
+    </FrameLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Via"
+android:layout_below="@+id/fame1"
+            android:id="@+id/textView4"
+            android:gravity="center"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/facebook"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+
+             />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="com.l134046zain.mentalhealthcare.Categories_Show">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:hint="Create Post"
+        android:layout_marginLeft="8dp"
+
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:typeface="serif"
+
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/createpostButn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+       />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/createpostButn"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
